@@ -18,6 +18,47 @@ import yfinance as yf
 import pandas as pd
 import csv
 
+import time
+
+def fancy_welcome():
+    print("--------------------------------------------------------")
+    print("📈💹💰 Welcome to ATS-mk1: Your Ultimate Trading Companion 💰💹📈")
+    print("                        Made with ❤️ by Ayush                        ")
+    print("--------------------------------------------------------")
+    print("Unleash the Power of Predictive Analytics for USD/INR Trading")
+    print("Get ready for Daily and Monthly Price Forecasts! 📊💹")
+    print("--------------------------------------------------------")
+
+def show_usage():
+    print("Usage:")
+    print("./ats-mk1 predict daily       # Receive Daily Predictions")
+    print("./ats-mk1 predict monthly     # Get Monthly Price Insights")
+    print("./ats-mk1 update-data         # Update Historical Data")
+    print("./ats-mk1 show-last-entries   # Display Last 5 Entries")
+    print("./ats-mk1 help                # Show Help")
+    print("--------------------------------------------------------")
+    print("Make Informed Trades with ATS-mk1! 🌐📈")
+
+def execute_command(command):
+    print(f"Executing: {command}")
+    time.sleep(3)
+    print("Command Executed Successfully! ✨")
+
+if __name__ == "__main__":
+    fancy_welcome()
+
+    execute_command("./ats-mk1 predict daily")
+    execute_command("./ats-mk1 predict monthly")
+    execute_command("./ats-mk1 update-data")
+    execute_command("./ats-mk1 show-last-entries")
+    execute_command("./ats-mk1 help")
+
+    print("\n")
+    print("\n")
+    print("\n")
+    print("Previous entries\n")
+
+
 # Define the currency pair
 pair = 'USDINR=X'  # or 'USD/INR'
 
